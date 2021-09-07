@@ -1,0 +1,144 @@
+:root {
+  font-size: 15px;
+}
+
+body,
+h2,
+p,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+  background: hsl(0, 0%, 95%);
+}
+
+h2 {
+  color: hsl(0, 0%, 95%);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* MAIN CONTENT */
+
+.card-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 80px 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sedans-card,
+.suvs-card,
+.luxury-card {
+  flex: 1 1 300px;
+  padding: 45px;
+}
+
+.sedans-card img,
+.suvs-card img,
+.luxury-card img {
+  margin-bottom: 30px;
+}
+
+.sedans-card h2,
+.suvs-card h2,
+.luxury-card h2 {
+  font-size: 2.5em;
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.sedans-card p,
+.suvs-card p,
+.luxury-card p {
+  font-size: 1em;
+  line-height: 1.6em;
+  margin-bottom: 90px;
+}
+
+.sedans-card {
+  background: hsl(31, 77%, 52%);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.suvs-card {
+  background: hsl(184, 100%, 22%);
+}
+
+.luxury-card {
+  background: hsl(179, 100%, 13%);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.btn {
+  display: block;
+  width: 150px;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 1em;
+  color: hsl(31, 77%, 52%);
+  background: hsl(0, 0%, 95%);
+  border-radius: 40px;
+}
+
+.suvs-card .btn {
+  color: hsl(184, 100%, 22%);
+}
+
+.luxury-card .btn {
+  color: hsl(179, 100%, 13%);
+}
+
+.btn:hover {
+  background: transparent;
+  color: hsl(0, 0%, 95%);
+  border: 2px solid currentColor;
+}
+
+@media only screen and (max-width: 919px) {
+  .sedans-card {
+    border-bottom-left-radius: 0px;
+  }
+
+  .suvs-card {
+    border-top-right-radius: 8px;
+  }
+
+  .luxury-card {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+}
+
+@media only screen and (max-width: 619px) {
+  .sedans-card {
+    border-top-right-radius: 8px;
+  }
+
+  .suvs-card {
+    border-top-right-radius: 0px;
+  }
+}
